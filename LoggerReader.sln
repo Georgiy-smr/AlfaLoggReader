@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerReader", "LoggerReader\LoggerReader.csproj", "{B50B9F32-A74A-4FC2-AD32-1C8182E201BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logger", "Logger", "{6BA81677-C226-49D5-BCB7-4EB030BE4391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextEf", "..\AlfaLogger\Solution\ContextEf\ContextEf.csproj", "{1D011FCC-E514-4E2F-AB18-2D324A75E34A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\AlfaLogger\Solution\Data\Data.csproj", "{F3E52216-D824-4C22-A86A-E8E1B788F0F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlfaLogger.Repository", "..\AlfaLogger\Solution\Repository\AlfaLogger.Repository.csproj", "{D5938185-5396-43C3-B22E-16573FF7208F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlfaLoggerLib", "..\AlfaLogger\Solution\AlfaLoggerLib\AlfaLoggerLib.csproj", "{9A641D16-8DE4-4FE9-89CA-F006C0BADFC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B50B9F32-A74A-4FC2-AD32-1C8182E201BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50B9F32-A74A-4FC2-AD32-1C8182E201BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50B9F32-A74A-4FC2-AD32-1C8182E201BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50B9F32-A74A-4FC2-AD32-1C8182E201BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D011FCC-E514-4E2F-AB18-2D324A75E34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D011FCC-E514-4E2F-AB18-2D324A75E34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D011FCC-E514-4E2F-AB18-2D324A75E34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D011FCC-E514-4E2F-AB18-2D324A75E34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E52216-D824-4C22-A86A-E8E1B788F0F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E52216-D824-4C22-A86A-E8E1B788F0F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E52216-D824-4C22-A86A-E8E1B788F0F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E52216-D824-4C22-A86A-E8E1B788F0F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5938185-5396-43C3-B22E-16573FF7208F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5938185-5396-43C3-B22E-16573FF7208F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5938185-5396-43C3-B22E-16573FF7208F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5938185-5396-43C3-B22E-16573FF7208F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A641D16-8DE4-4FE9-89CA-F006C0BADFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A641D16-8DE4-4FE9-89CA-F006C0BADFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A641D16-8DE4-4FE9-89CA-F006C0BADFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A641D16-8DE4-4FE9-89CA-F006C0BADFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D011FCC-E514-4E2F-AB18-2D324A75E34A} = {6BA81677-C226-49D5-BCB7-4EB030BE4391}
+		{F3E52216-D824-4C22-A86A-E8E1B788F0F7} = {6BA81677-C226-49D5-BCB7-4EB030BE4391}
+		{D5938185-5396-43C3-B22E-16573FF7208F} = {6BA81677-C226-49D5-BCB7-4EB030BE4391}
+		{9A641D16-8DE4-4FE9-89CA-F006C0BADFC3} = {6BA81677-C226-49D5-BCB7-4EB030BE4391}
+	EndGlobalSection
+EndGlobal
