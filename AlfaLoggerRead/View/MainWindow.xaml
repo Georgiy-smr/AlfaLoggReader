@@ -17,25 +17,59 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <StackPanel 
+            Orientation="Horizontal"
+            Grid.Column="0"
+            Grid.Row="0"
+            Margin="10"
+            Grid.ColumnSpan="3">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top">
+                    Название
+                </TextBlock>
+                <TextBox 
+                    DockPanel.Dock="Bottom"
+                    Text="{Binding FilterPublishName}">
+                </TextBox>
+            </DockPanel>
+
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top">
+                    Сообщение
+                </TextBlock>
+                <TextBox 
+                    DockPanel.Dock="Bottom"
+                    Text="{Binding FilterMessage}">
+                </TextBox>
+            </DockPanel>
+
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top">
+                    Тип
+                </TextBlock>
+                <TextBox 
+                    DockPanel.Dock="Bottom"
+                    Text="{Binding FilterType}">
+                </TextBox>
+            </DockPanel>
+        </StackPanel>
+
+
+
         <ScrollViewer 
+            Margin="10"
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="3">
-            
             <DataGrid
                 ItemsSource="{Binding Logs}">
             </DataGrid>
-
         </ScrollViewer>
-
-
-
-
 
         <StackPanel
             VerticalAlignment="Bottom"

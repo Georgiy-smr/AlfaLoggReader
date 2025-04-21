@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 using AlfaLoggerLib.Logging;
+using Data.Entities;
 using LoggerReader.Infrastructure.Command;
 using LoggerReader.Services.UserDialogs;
 using LoggerReader.ViewModels.Base;
@@ -54,8 +56,13 @@ namespace LoggerReader.ViewModels
         }
         public async Task ResponseRepository()
         {
+
             var result = 
-                await _repository.Events(SizePage, NumPage - 1);
+                await _repository.Events
+                    (size: SizePage,
+                    zeroStart: NumPage - 1,
+                    filters: GetFiltersOrNull()
+                    );
 
             if (result.HasErrors)
             {
@@ -63,6 +70,27 @@ namespace LoggerReader.ViewModels
                 return;
             }
             Logs = new ObservableCollection<LoggingEventDto>(result.Result);
+        }
+
+        private List<Expression<Func<Log, bool>>>? GetFiltersOrNull()
+        {
+            List<Expression<Func<Log, bool>>> filters = new();
+            if (!string.IsNullOrEmpty(FilterPublishName))
+            {
+                filters.Add(x => x.EventPublishName.Contains(FilterPublishName));
+            }
+
+            if (!string.IsNullOrEmpty(FilterMessage))
+            {
+                filters.Add(x => x.Message.Contains(FilterMessage));
+            }
+
+            if (!string.IsNullOrEmpty(FilterType))
+            {
+                filters.Add(x => x.TypeEvent.ToString().Contains(FilterType));
+            }
+
+            return filters.Any() ? filters : null;
         }
 
         private ObservableCollection<LoggingEventDto> _logs;
@@ -96,8 +124,28 @@ namespace LoggerReader.ViewModels
 
 
 
+        private string _filterPublishName;
+        public string FilterPublishName
+        {
+            get => _filterPublishName;
+            set => Set(ref _filterPublishName, value);
+        }
 
 
+        private string _filterMessage;
+        public string FilterMessage
+        {
+            get => _filterMessage;
+            set => Set(ref _filterMessage, value);
+        }
+
+
+        private string _filterType;
+        public string FilterType
+        {
+            get => _filterType;
+            set => Set(ref _filterType, value);
+        }
 
     }
 }
