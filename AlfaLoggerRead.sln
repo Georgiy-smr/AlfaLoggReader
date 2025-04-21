@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlfaLoggerRead", "AlfaLoggerRead\AlfaLoggerRead.csproj", "{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logger", "Logger", "{B4411B74-4FBF-4ADC-9E12-004B917A5E8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlfaLoggerLib", "..\AlfaLogger\Solution\AlfaLoggerLib\AlfaLoggerLib.csproj", "{34740A2A-F92D-48BB-A9D7-0E1160CCA12E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextEf", "..\AlfaLogger\Solution\ContextEf\ContextEf.csproj", "{82EDAAA1-0743-438E-98E3-ADD82665F4C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "..\AlfaLogger\Solution\Data\Data.csproj", "{52EE95FF-A37D-4DAF-990E-1DD12176F98F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlfaLogger.Repository", "..\AlfaLogger\Solution\Repository\AlfaLogger.Repository.csproj", "{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34740A2A-F92D-48BB-A9D7-0E1160CCA12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34740A2A-F92D-48BB-A9D7-0E1160CCA12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34740A2A-F92D-48BB-A9D7-0E1160CCA12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34740A2A-F92D-48BB-A9D7-0E1160CCA12E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EDAAA1-0743-438E-98E3-ADD82665F4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EDAAA1-0743-438E-98E3-ADD82665F4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EDAAA1-0743-438E-98E3-ADD82665F4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EDAAA1-0743-438E-98E3-ADD82665F4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52EE95FF-A37D-4DAF-990E-1DD12176F98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EE95FF-A37D-4DAF-990E-1DD12176F98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EE95FF-A37D-4DAF-990E-1DD12176F98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EE95FF-A37D-4DAF-990E-1DD12176F98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34740A2A-F92D-48BB-A9D7-0E1160CCA12E} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
+		{82EDAAA1-0743-438E-98E3-ADD82665F4C7} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
+		{52EE95FF-A37D-4DAF-990E-1DD12176F98F} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
+		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0136F8EA-BE82-409C-ACA5-71062B24F98D}
+	EndGlobalSection
+EndGlobal
