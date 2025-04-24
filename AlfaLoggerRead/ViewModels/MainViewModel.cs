@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
+﻿using System.Collections.ObjectModel;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Input;
-using AlfaLoggerLib.Logging;
+using AlfaLoggerRead.Extension;
 using Data.Entities;
 using LoggerReader.Infrastructure.Command;
-using LoggerReader.Services.UserDialogs;
 using LoggerReader.ViewModels.Base;
 using Repository;
 using Repository.DtoObjects;
 
-namespace LoggerReader.ViewModels
+namespace AlfaLoggerRead.ViewModels
 {
     internal class MainViewModel : BaseViewModel
     {
@@ -77,19 +70,30 @@ namespace LoggerReader.ViewModels
             List<Expression<Func<Log, bool>>> filters = new();
             if (!string.IsNullOrEmpty(FilterPublishName))
             {
-                filters.Add(x => x.EventPublishName.Contains(FilterPublishName));
+                var fiterPublishName = 
+                    FilterPublishName
+                        .Split("||")
+                        .BuildContainsOrExpression<Log>(x => x.EventPublishName);
+                filters.Add(fiterPublishName);
             }
 
             if (!string.IsNullOrEmpty(FilterMessage))
             {
-                filters.Add(x => x.Message.Contains(FilterMessage));
+                var fiterMessage =
+                    FilterMessage
+                        .Split("||")
+                        .BuildContainsOrExpression<Log>(x => x.Message);
+                filters.Add(fiterMessage);
             }
 
             if (!string.IsNullOrEmpty(FilterType))
             {
-                filters.Add(x => x.TypeEvent.ToString().Contains(FilterType));
+                var fiterType =
+                    FilterType
+                        .Split("||")
+                        .BuildContainsOrExpression<Log>(x => x.TypeEvent.ToString());
+                filters.Add(fiterType);
             }
-
             return filters.Any() ? filters : null;
         }
 

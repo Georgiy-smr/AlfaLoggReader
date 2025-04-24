@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoggerReader"
         xmlns:vm="clr-namespace:LoggerReader.ViewModels"
+        xmlns:viewModels="clr-namespace:AlfaLoggerRead.ViewModels"
         mc:Ignorable="d"
-        d:DataContext="{d:DesignInstance d:Type = {x:Type vm:MainViewModel}}"
+        d:DataContext="{d:DesignInstance d:Type = {x:Type viewModels:MainViewModel}}"
         Title="{Binding Title}"
         Height="450"
         Width="800">
