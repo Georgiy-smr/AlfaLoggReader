@@ -6,11 +6,13 @@
         xmlns:local="clr-namespace:LoggerReader"
         xmlns:vm="clr-namespace:LoggerReader.ViewModels"
         xmlns:viewModels="clr-namespace:AlfaLoggerRead.ViewModels"
+        xmlns:entities="clr-namespace:Data.Entities;assembly=Data"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance d:Type = {x:Type viewModels:MainViewModel}}"
         Title="{Binding Title}"
         Height="450"
         Width="800">
+
     <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -29,31 +31,40 @@
             Grid.Row="0"
             Margin="10"
             Grid.ColumnSpan="3">
-            <DockPanel>
-                <TextBlock DockPanel.Dock="Top">
+            <DockPanel Margin="10">
+                <TextBlock DockPanel.Dock="Top"
+                           FontSize="30">
                     Название
                 </TextBlock>
                 <TextBox 
+                    FontSize="30"
+                    MinWidth="100"
                     DockPanel.Dock="Bottom"
                     Text="{Binding FilterPublishName}">
                 </TextBox>
             </DockPanel>
 
-            <DockPanel>
-                <TextBlock DockPanel.Dock="Top">
+            <DockPanel  Margin="10">
+                <TextBlock DockPanel.Dock="Top"
+                           FontSize="30">
                     Сообщение
                 </TextBlock>
                 <TextBox 
+                    FontSize="30"
+                    MinWidth="100"
                     DockPanel.Dock="Bottom"
                     Text="{Binding FilterMessage}">
                 </TextBox>
             </DockPanel>
 
-            <DockPanel>
-                <TextBlock DockPanel.Dock="Top">
+            <DockPanel  Margin="10">
+                <TextBlock DockPanel.Dock="Top"
+                           FontSize="30">
                     Тип
                 </TextBlock>
                 <TextBox 
+                    MinWidth="100"
+                    FontSize="30"
                     DockPanel.Dock="Bottom"
                     Text="{Binding FilterType}">
                 </TextBox>
@@ -65,10 +76,45 @@
         <ScrollViewer 
             Margin="10"
             Grid.Row="1"
+            FontSize="22"
             Grid.Column="0"
             Grid.ColumnSpan="3">
             <DataGrid
-                ItemsSource="{Binding Logs}">
+                ColumnWidth="*"
+                HorizontalContentAlignment="Right"
+                AutoGenerateColumns="False"
+                GridLinesVisibility="Vertical"
+                VerticalGridLinesBrush="DarkGray"
+                AlternatingRowBackground="LightGray"
+                ItemsSource="{Binding Logs}" Background="#FFAD9F9F">
+
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn
+                        Width="250"
+                        Header="Дата"
+                        SortMemberPath="Date">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type entities:Log}">
+                                <TextBlock Text="{Binding Date, StringFormat=dd.MM.yyyy HH:mm:ss.fff}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header = "Публикатор" 
+                                        Binding = "{Binding Path=EventPublishName}" 
+                                        IsReadOnly = "False"/>
+  
+                    <DataGridTextColumn Header = "Тип события" 
+                                        Binding = "{Binding Path=TypeEvent}" 
+                                        IsReadOnly = "False"/>
+
+                    <DataGridTextColumn Header = "Контекст" 
+                                        Binding = "{Binding Path=Message}" 
+                                        IsReadOnly = "False"/>
+
+
+                </DataGrid.Columns>
+
             </DataGrid>
         </ScrollViewer>
 
@@ -79,7 +125,8 @@
             Orientation="Vertical"
             Grid.Column="0"
             Grid.Row="2">
-            <Button Command="{Binding BackCommand}">
+            <Button Command="{Binding BackCommand}"
+                    FontSize="30">
                 Назад
             </Button>
         </StackPanel>
@@ -91,7 +138,8 @@
             Orientation="Vertical"
             Grid.Column="2"
             Grid.Row="2">
-            <Button Command="{Binding NextCommand}">
+            <Button Command="{Binding NextCommand}"
+                    FontSize="30">
                 Далее
             </Button>
         </StackPanel>
@@ -103,12 +151,20 @@
             Orientation="Horizontal"
             Grid.Column="1"
             Grid.Row="2">
-            <TextBlock Text="Страница №"/>
-            <TextBlock Text="{Binding NumPage}"/>
-            <TextBlock Text="Пагинация"/>
+            <TextBlock Text="Страница №" FontSize="20" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding NumPage}" 
+                       FontSize="25" 
+                       VerticalAlignment="Center"
+                       Margin="0 0 10 0"/>
+            <TextBlock Text="Показать"
+                       FontSize="20"
+                       VerticalAlignment="Center"
+                     />
             <TextBox Text="{Binding SizePage}"
+                     FontSize="30"
+                     VerticalAlignment="Center"
                 MinWidth="40"/>
-            <Button Command="{Binding RefreshCommand}">
+            <Button Command="{Binding RefreshCommand}" FontSize="30" Margin="10 0 0 0">
                 Обновить
             </Button>
         </StackPanel>

@@ -59,7 +59,7 @@ namespace AlfaLoggerRead.ViewModels
 
             if (result.HasErrors)
             {
-                Logs.Clear();
+                Logs?.Clear();
                 return;
             }
             Logs = new ObservableCollection<LoggingEventDto>(result.Result);
