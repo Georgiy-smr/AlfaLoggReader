@@ -10,7 +10,7 @@ internal class LambdaCommandAsync : LoggerReader.Infrastructure.Command.Command
     /// <summary>Выполнять задачу принудительно в фоновом потоке</summary>
     public bool Background { get; set; }
 
-    public LambdaCommandAsync(Func<object, Task> executeAsync, Func<object?, bool>? canExecuteAsync = null)
+    public LambdaCommandAsync(Func<object, Task> executeAsync, Func<object, bool> canExecuteAsync = null)
     {
         _executeAsync = executeAsync ?? throw new ArgumentNullException(nameof(executeAsync));
         _canExecuteAsync = canExecuteAsync;

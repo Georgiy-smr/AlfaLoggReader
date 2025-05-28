@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj": {}
+    "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj": {
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj": {
       "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj",
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj",
         "projectName": "AlfaLoggerLib",
-        "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj",
-        "packagesPath": "C:\\Users\\Gosha and Anya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\AlfaLoggerLib\\obj\\",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gosha and Anya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
-                "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj"
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj"
               }
             }
           }
@@ -47,8 +43,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -91,25 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj",
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj",
         "projectName": "ContextEf",
-        "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj",
-        "packagesPath": "C:\\Users\\Gosha and Anya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\obj\\",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gosha and Anya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -123,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj"
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj"
               }
             }
           }
@@ -138,8 +129,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -174,25 +164,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj": {
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Gosha and Anya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\obj\\",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gosha and Anya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -217,8 +203,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -249,25 +234,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj": {
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj",
         "projectName": "AlfaLogger.Repository",
-        "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj",
-        "packagesPath": "C:\\Users\\Gosha and Anya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gosha and Anya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -281,11 +262,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
-                "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj"
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj"
               },
-              "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Data\\Data.csproj"
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj"
               }
             }
           }
@@ -299,8 +280,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -335,25 +315,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj": {
+    "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
         "projectName": "AlfaLoggerRead",
-        "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
-        "packagesPath": "C:\\Users\\Gosha and Anya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\obj\\",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gosha and Anya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -367,11 +343,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj": {
-                "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj"
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj"
               },
-              "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj": {
-                "projectPath": "C:\\Users\\Gosha and Anya\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj"
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj"
               }
             }
           }
@@ -385,13 +361,16 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Extended.Wpf.Toolkit": {
               "target": "Package",
               "version": "[4.7.25104.5739, )"
@@ -403,6 +382,10 @@
             "Microsoft.Xaml.Behaviors.Wpf": {
               "target": "Package",
               "version": "[1.1.135, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [
@@ -424,7 +407,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

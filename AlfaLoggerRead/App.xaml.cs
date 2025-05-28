@@ -21,6 +21,7 @@ namespace AlfaLoggerRead
                 .UserDialogs()
                 .AddAlfaLogger()
                 .AddRepositoryLogs()
+                .AddExport()
         ;
 
         public App()

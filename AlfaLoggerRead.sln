@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "..\AlfaLogger\Solut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlfaLogger.Repository", "..\AlfaLogger\Solution\Repository\AlfaLogger.Repository.csproj", "{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E802D761-F316-4BF7-B851-BCE2DD55A13F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportsDataTests", "ExportsDataTests\ExportsDataTests.csproj", "{37CEA3D8-C13F-4608-ABD8-EBBFA93A37BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CEA3D8-C13F-4608-ABD8-EBBFA93A37BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CEA3D8-C13F-4608-ABD8-EBBFA93A37BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CEA3D8-C13F-4608-ABD8-EBBFA93A37BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CEA3D8-C13F-4608-ABD8-EBBFA93A37BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{82EDAAA1-0743-438E-98E3-ADD82665F4C7} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
 		{52EE95FF-A37D-4DAF-990E-1DD12176F98F} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
 		{CAB07091-3233-4FDE-B0F8-C23DC70C0F2D} = {B4411B74-4FBF-4ADC-9E12-004B917A5E8D}
+		{37CEA3D8-C13F-4608-ABD8-EBBFA93A37BE} = {E802D761-F316-4BF7-B851-BCE2DD55A13F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0136F8EA-BE82-409C-ACA5-71062B24F98D}

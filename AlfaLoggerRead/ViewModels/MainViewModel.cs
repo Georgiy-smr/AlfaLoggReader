@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Linq.Expressions;
 using System.Windows.Input;
 using AlfaLoggerRead.Extension;
+using AlfaLoggerRead.Services.Export;
 using Data.Entities;
 using LoggerReader.Infrastructure.Command;
 using LoggerReader.ViewModels.Base;
@@ -14,10 +15,13 @@ namespace AlfaLoggerRead.ViewModels
     internal class MainViewModel : BaseViewModel
     {
         private readonly LogsRepository _repository;
+        private readonly IExport<IEnumerable<LoggingEventDto>> _export;
         public MainViewModel(
-            LogsRepository repository)
+            LogsRepository repository,
+            IExport<IEnumerable<LoggingEventDto>> export)
         {
             _repository = repository;
+            _export = export;
         }
 
         private DateTime _dateStart = DateTime.Now;
@@ -136,6 +140,25 @@ namespace AlfaLoggerRead.ViewModels
             NumPage--;
             RefreshCommand.Execute(p);
         }
+
+
+        #region ExportToXlsxCommand Export data to excel file
+
+
+        private ICommand? _exportToXlsxCommand;
+
+        public ICommand ExportToXlsxCommand =>
+            _exportToXlsxCommand ??= new LambdaCommandAsync(OnExportToXlsxCommandExecuted, CanExportToXlsxCommandExecute);
+
+        private bool CanExportToXlsxCommandExecute(object p) => Logs.Any();
+
+        private  Task OnExportToXlsxCommandExecuted(object p)
+        {
+            _export.ExportAsync(Logs);
+            return Task.CompletedTask;
+        }
+
+        #endregion  
 
 
 

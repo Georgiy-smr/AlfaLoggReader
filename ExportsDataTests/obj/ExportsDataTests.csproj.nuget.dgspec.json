@@ -1,0 +1,506 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\ExportsDataTests\\ExportsDataTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj": {
+      "version": "1.0.1",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj",
+        "projectName": "AlfaLoggerLib",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.5.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj",
+        "projectName": "ContextEf",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj",
+        "projectName": "AlfaLogger.Repository",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\ContextEf\\ContextEf.csproj"
+              },
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GenericServices.StatusGeneric": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.5.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
+        "projectName": "AlfaLoggerRead",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\AlfaLoggerLib\\AlfaLoggerLib.csproj"
+              },
+              "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLogger\\Solution\\Repository\\AlfaLogger.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.7.25104.5739, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.135, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\ExportsDataTests\\ExportsDataTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\ExportsDataTests\\ExportsDataTests.csproj",
+        "projectName": "ExportsDataTests",
+        "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\ExportsDataTests\\ExportsDataTests.csproj",
+        "packagesPath": "C:\\Users\\Гоша и Аня\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\ExportsDataTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Гоша и Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows10.0.17763.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows10.0.17763": {
+            "targetAlias": "net8.0-windows10.0.17763.0",
+            "projectReferences": {
+              "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj": {
+                "projectPath": "C:\\Users\\Гоша и Аня\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows10.0.17763": {
+          "targetAlias": "net8.0-windows10.0.17763.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.17763.31, 10.0.17763.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
