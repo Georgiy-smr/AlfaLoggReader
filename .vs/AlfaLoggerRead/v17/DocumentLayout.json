@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mrsmi\\AlfaLoggReader\\",
+  "WorkspaceRootPath": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|c:\\users\\mrsmi\\alfaloggreader\\alfaloggerread\\alfaloggerread.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|solutionrelative:alfaloggerread\\alfaloggerread.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|c:\\users\\gosha and anya\\alfaloggreader\\alfaloggerread\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|solutionrelative:alfaloggerread\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|c:\\users\\gosha and anya\\alfaloggreader\\alfaloggerread\\extension\\filterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|solutionrelative:alfaloggerread\\extension\\filterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|c:\\users\\gosha and anya\\alfaloggreader\\alfaloggerread\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{22E74939-1AA9-4D42-94E1-3BA1A8367FE6}|AlfaLoggerRead\\AlfaLoggerRead.csproj|solutionrelative:alfaloggerread\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,79 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilterBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\Extension\\FilterBuilder.cs",
+              "RelativeDocumentMoniker": "AlfaLoggerRead\\Extension\\FilterBuilder.cs",
+              "ToolTip": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\Extension\\FilterBuilder.cs",
+              "RelativeToolTip": "AlfaLoggerRead\\Extension\\FilterBuilder.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T06:20:05.99Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:138:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AlfaLoggerRead\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\View\\MainWindow.xaml",
+              "RelativeToolTip": "AlfaLoggerRead\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-28T05:06:58.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlfaLoggerRead",
-              "DocumentMoniker": "C:\\Users\\mrsmi\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
-              "RelativeDocumentMoniker": "AlfaLoggerRead\\AlfaLoggerRead.csproj",
-              "ToolTip": "C:\\Users\\mrsmi\\AlfaLoggReader\\AlfaLoggerRead\\AlfaLoggerRead.csproj",
-              "RelativeToolTip": "AlfaLoggerRead\\AlfaLoggerRead.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-21T08:32:14.136Z",
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "AlfaLoggerRead\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Gosha and Anya\\AlfaLoggReader\\AlfaLoggerRead\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "AlfaLoggerRead\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA5wGgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:03:09.634Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq.Expressions;
 using System.Windows.Input;
 using AlfaLoggerRead.Extension;
@@ -18,6 +19,21 @@ namespace AlfaLoggerRead.ViewModels
         {
             _repository = repository;
         }
+
+        private DateTime _dateStart = DateTime.Now;
+        public string DateTimeStartString
+        {
+            get => _dateStart.ToString(CultureInfo.CurrentCulture);
+            set => _dateStart = DateTime.Parse(value);
+        }
+
+        private DateTime _dateFinish = DateTime.Now;
+        public string DateTimeFinishToString
+        {
+            get => _dateFinish.ToString(CultureInfo.CurrentCulture);
+            set => _dateFinish = DateTime.Parse(value);
+        }
+
 
         private string _title = "AlfaLoggReader";
         public string Title
@@ -54,50 +70,45 @@ namespace AlfaLoggerRead.ViewModels
                 await _repository.Events
                     (size: SizePage,
                     zeroStart: NumPage - 1,
-                    filters: GetFiltersOrNull()
+                    filters: GetFilters()
                     );
 
             if (result.HasErrors)
             {
-                Logs?.Clear();
+                Logs.Clear();
                 return;
             }
             Logs = new ObservableCollection<LoggingEventDto>(result.Result);
         }
 
-        private List<Expression<Func<Log, bool>>>? GetFiltersOrNull()
+        private List<Expression<Func<Log, bool>>> GetFilters()
         {
             List<Expression<Func<Log, bool>>> filters = new();
             if (!string.IsNullOrEmpty(FilterPublishName))
             {
-                var fiterPublishName = 
+                filters.Add(
                     FilterPublishName
                         .Split("||")
-                        .BuildContainsOrExpression<Log>(x => x.EventPublishName);
-                filters.Add(fiterPublishName);
+                        .BuildContainsOrExpression<Log>(x => x.EventPublishName));
             }
-
             if (!string.IsNullOrEmpty(FilterMessage))
             {
-                var fiterMessage =
-                    FilterMessage
-                        .Split("||")
-                        .BuildContainsOrExpression<Log>(x => x.Message);
-                filters.Add(fiterMessage);
+                filters.Add(FilterMessage
+                    .Split("||")
+                    .BuildContainsOrExpression<Log>(x => x.Message));
             }
-
             if (!string.IsNullOrEmpty(FilterType))
             {
-                var fiterType =
-                    FilterType
-                        .Split("||")
-                        .BuildContainsOrExpression<Log>(x => x.TypeEvent.ToString());
-                filters.Add(fiterType);
+                filters.Add(FilterType
+                    .Split("||")
+                    .BuildContainsOrExpression<Log>(x => x.TypeEvent.ToString()));
             }
-            return filters.Any() ? filters : null;
+            filters.Add(x => x.Date >= _dateStart && x.Date <= _dateFinish);
+
+            return filters;
         }
 
-        private ObservableCollection<LoggingEventDto> _logs;
+        private ObservableCollection<LoggingEventDto> _logs = new();
         public ObservableCollection<LoggingEventDto> Logs
         {
             get => _logs;
@@ -128,7 +139,7 @@ namespace AlfaLoggerRead.ViewModels
 
 
 
-        private string _filterPublishName;
+        private string _filterPublishName = string.Empty;
         public string FilterPublishName
         {
             get => _filterPublishName;
@@ -136,7 +147,7 @@ namespace AlfaLoggerRead.ViewModels
         }
 
 
-        private string _filterMessage;
+        private string _filterMessage = string.Empty;
         public string FilterMessage
         {
             get => _filterMessage;
@@ -144,7 +155,7 @@ namespace AlfaLoggerRead.ViewModels
         }
 
 
-        private string _filterType;
+        private string _filterType = string.Empty;
         public string FilterType
         {
             get => _filterType;

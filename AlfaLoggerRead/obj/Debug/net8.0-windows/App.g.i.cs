@@ -46,7 +46,7 @@ namespace AlfaLoggerRead {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.3.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.1.0")]
         public static void Main() {
             AlfaLoggerRead.App app = new AlfaLoggerRead.App();
             app.Run();

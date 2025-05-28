@@ -7,6 +7,7 @@
         xmlns:vm="clr-namespace:LoggerReader.ViewModels"
         xmlns:viewModels="clr-namespace:AlfaLoggerRead.ViewModels"
         xmlns:entities="clr-namespace:Data.Entities;assembly=Data"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance d:Type = {x:Type viewModels:MainViewModel}}"
         Title="{Binding Title}"
@@ -69,9 +70,29 @@
                     Text="{Binding FilterType}">
                 </TextBox>
             </DockPanel>
+
+            <DockPanel  Margin="10">
+                <TextBlock DockPanel.Dock="Top"
+                           FontSize="30">
+                    От
+                </TextBlock>
+                <xctk:DateTimePicker 
+                    DockPanel.Dock="Bottom" 
+                    Text="{Binding DateTimeStartString}">
+                </xctk:DateTimePicker>
+            </DockPanel>
+
+            <DockPanel  Margin="10">
+                <TextBlock DockPanel.Dock="Top"
+                           FontSize="30">
+                    До
+                </TextBlock>
+                <xctk:DateTimePicker 
+                    DockPanel.Dock="Bottom"
+                    Text="{Binding DateTimeFinishToString}">
+                </xctk:DateTimePicker>
+            </DockPanel>
         </StackPanel>
-
-
 
         <ScrollViewer 
             Margin="10"
@@ -87,7 +108,11 @@
                 VerticalGridLinesBrush="DarkGray"
                 AlternatingRowBackground="LightGray"
                 ItemsSource="{Binding Logs}" Background="#FFAD9F9F">
-
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="ToolTip" Value="{Binding Message}" />
+                    </Style>
+                </DataGrid.Resources>
                 <DataGrid.Columns>
                     <DataGridTemplateColumn
                         Width="250"
@@ -111,8 +136,6 @@
                     <DataGridTextColumn Header = "Контекст" 
                                         Binding = "{Binding Path=Message}" 
                                         IsReadOnly = "False"/>
-
-
                 </DataGrid.Columns>
 
             </DataGrid>
