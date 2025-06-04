@@ -71,27 +71,41 @@
                 </TextBox>
             </DockPanel>
 
-            <DockPanel  Margin="10">
-                <TextBlock DockPanel.Dock="Top"
-                           FontSize="30">
-                    От
-                </TextBlock>
-                <xctk:DateTimePicker 
-                    DockPanel.Dock="Bottom" 
-                    Text="{Binding DateTimeStartString}">
-                </xctk:DateTimePicker>
-            </DockPanel>
+            <ToggleButton Margin="10" 
+                          VerticalContentAlignment="Stretch"
+                          HorizontalContentAlignment="Stretch"
+                          IsChecked="{Binding StartDateTimeIsChecked}">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top"
+                               FontSize="30">
+                        От
+                    </TextBlock>
+                    <xctk:DateTimePicker 
+                        DockPanel.Dock="Bottom" 
+                        Text="{Binding DateTimeStartString}">
+                    </xctk:DateTimePicker>
+                </DockPanel>
+            </ToggleButton>
 
-            <DockPanel  Margin="10">
-                <TextBlock DockPanel.Dock="Top"
-                           FontSize="30">
-                    До
-                </TextBlock>
-                <xctk:DateTimePicker 
-                    DockPanel.Dock="Bottom"
-                    Text="{Binding DateTimeFinishToString}">
-                </xctk:DateTimePicker>
-            </DockPanel>
+            <ToggleButton 
+                IsChecked="{Binding FinishDateTimeIsChecked}"
+                Margin="10"
+                HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <DockPanel  >
+                    <TextBlock DockPanel.Dock="Top"
+                               FontSize="30">
+                        До
+                    </TextBlock>
+                    <xctk:DateTimePicker 
+                        DockPanel.Dock="Bottom"
+                        Text="{Binding DateTimeFinishToString}">
+                    </xctk:DateTimePicker>
+                </DockPanel>
+            </ToggleButton>
+
+     
+
+        
         </StackPanel>
 
         <ScrollViewer 
