@@ -24,11 +24,25 @@ namespace AlfaLoggerRead.ViewModels
             _export = export;
         }
 
+        private bool _startDateTimeIsChecked;
+        public bool StartDateTimeIsChecked
+        {
+            get => _startDateTimeIsChecked;
+            set => Set(ref _startDateTimeIsChecked, value);
+        }
+
         private DateTime _dateStart = DateTime.Now;
         public string DateTimeStartString
         {
             get => _dateStart.ToString(CultureInfo.CurrentCulture);
             set => _dateStart = DateTime.Parse(value);
+        }
+
+        private bool _finishDateTimeIsChecked;
+        public bool FinishDateTimeIsChecked
+        {
+            get => _finishDateTimeIsChecked;
+            set => Set(ref _finishDateTimeIsChecked, value);
         }
 
         private DateTime _dateFinish = DateTime.Now;
@@ -107,8 +121,10 @@ namespace AlfaLoggerRead.ViewModels
                     .Split("||")
                     .BuildContainsOrExpression<Log>(x => x.TypeEvent.ToString()));
             }
-            filters.Add(x => x.Date >= _dateStart && x.Date <= _dateFinish);
-
+            if(StartDateTimeIsChecked)
+                filters.Add(x => x.Date >= _dateStart);
+            if (FinishDateTimeIsChecked)
+                filters.Add(x => x.Date <= _dateFinish);
             return filters;
         }
 
